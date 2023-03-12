@@ -27,16 +27,21 @@ body {
     justify-content: space-between;
 }
 .header_acardion i{
-    display: none;
+    /* display: none; */
     transition: 0.5s ease-out;
 }
 .wraper_acardion:hover i{
     display: block;
 }
+.wraper_acardion:hover .acardion_title {
+  color: black;
+}
 .acardion_title {
   font-size: 20px;
   cursor: pointer;
   padding: 2vh 0;
+  color: red;
+  width: 100%;
 }
 .acardion_input {
   appearance: none;
