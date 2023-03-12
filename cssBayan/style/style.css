@@ -28,6 +28,7 @@ body {
 }
 .header_acardion i{
     display: none;
+    transition: 0.5s ease-out;
 }
 .wraper_acardion:hover i{
     display: block;
@@ -43,8 +44,12 @@ body {
   height: 0;
   position: absolute;
 }
-.acardion_input:checked + .acardion_mem {
+.acardion_input:checked ~ .acardion_mem {
   display: block;
+}
+.acardion_input:checked ~ .header_acardion i{
+  transform: rotate(0.12turn);
+  transition: 0.5s ease-out;
 }
 .acardion_mem {
   max-width: 60%;
