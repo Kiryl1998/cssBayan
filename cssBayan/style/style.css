@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+.wraper_acardion{
+    border: 1px solid black;
+    max-width: 60%;
+    margin: auto;
+}
+.acardion{
+    margin: auto;
+    /* border: 1px solid red; */
+
+}
+.acardion h1{
+    margin: 0;
+}
+.acardion hr{
+    margin: 0;
+    background-color: gray;
+}
+.acardion_item{
+
+}
+.acardion_title{
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    padding: 10px 0;
+}
+.acardion_input{
+    appearance: none;
+    width: 0;
+    height: 0;
+    position:absolute;
+}
+.acardion_input:checked + .acardion_mem{
+    display: block;
+}
+.acardion_mem{
+    max-width: 60%;
+    margin: auto;
+    display:none;
+}
+.img_mem{
+    width: 100%;
+}
