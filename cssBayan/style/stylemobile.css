@@ -1,0 +1,8 @@
+@media(max-width: 320px){
+    .acardion h1{
+        font-size: 18px;
+    }
+    .acardion_title{
+        font-size: 10px;
+    }
+}
