@@ -25,30 +25,38 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: red;
+    transition: 0.3s ease-out;
 }
 .header_acardion1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: red;
+    transition: 0.3s ease-out;
 }
 .header_acardion i{
-    transition: 0.5s ease-out;
+    transition: 0.3s ease-out;
 }
 .header_acardion1 i{
   transform: rotate(0.12turn);
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
 }
 .wraper_acardion:hover i{
     display: block;
 }
-.wraper_acardion:hover .acardion_title {
+.wraper_acardion:hover .header_acardion{
   color: black;
+  transition: 0.3s ease-out;
+}
+.wraper_acardion:hover .header_acardion1{
+  color: black;
+  transition: 0.3s ease-out;
 }
 .acardion_title {
-  font-size: 20px;
+  font-size: 23px;
   cursor: pointer;
   padding: 2vh 0;
-  color: red;
   width: 100%;
 }
 .acardion_input {
@@ -65,11 +73,11 @@ body {
 }
 .acardion_input:checked ~ .header_acardion i{
   transform: rotate(0.12turn);
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
 }
 .acardion_input:checked ~ .header_acardion1 i{
   transform: rotate(0turn);
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
 }
 .acardion_mem{
   max-width: 60%;
