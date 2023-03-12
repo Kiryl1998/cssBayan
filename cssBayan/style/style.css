@@ -1,49 +1,56 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: aqua;
+body {
+  background-color: aqua;
 }
-.wraper_acardion{
-    border: 1px solid black;
-    max-width: 60%;
-    margin: auto;
+.wraper_acardion {
+  /* border: 1px solid black; */
+  max-width: 60%;
+  margin: auto;
 }
-.acardion{
-    margin: auto;
-    /* border: 1px solid red; */
-
+.acardion {
+  margin: auto;
 }
-.acardion h1{
-    margin: 0;
+.acardion h1 {
+  margin: 0;
 }
-.acardion hr{
-    margin: 0;
-    background-color: gray;
+.acardion hr {
+  margin: 0;
+  background-color: gray;
 }
-.acardion_item{
-
+.acardion_item {
 }
-.acardion_title{
-    font-size: 20px;
-    cursor: pointer;
-    display: block;
-    padding: 10px 0;
+.header_acardion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.acardion_input{
-    appearance: none;
-    width: 0;
-    height: 0;
-    position:absolute;
+.header_acardion i{
+    display: none;
 }
-.acardion_input:checked + .acardion_mem{
+.wraper_acardion:hover i{
     display: block;
 }
-.acardion_mem{
-    max-width: 60%;
-    margin: auto;
-    display:none;
+.acardion_title {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 2vh 0;
 }
-.img_mem{
-    width: 100%;
+.acardion_input {
+  appearance: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.acardion_input:checked + .acardion_mem {
+  display: block;
+}
+.acardion_mem {
+  max-width: 60%;
+  margin: auto;
+  display: none;
+}
+.img_mem {
+  width: 100%;
 }
