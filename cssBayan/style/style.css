@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+}
+.wraper_acardion {
+  /* border: 1px solid black; */
+  max-width: 60%;
+  margin: auto;
+}
+.acardion {
+  margin: auto;
+}
+.acardion h1 {
+  margin: 0;
+}
+.acardion hr {
+  margin: 0;
+  background-color: gray;
+}
+.acardion_item {
+}
+.header_acardion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: red;
+    transition: 0.3s ease-out;
+}
+.header_acardion1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: red;
+    transition: 0.3s ease-out;
+}
+.header_acardion i{
+    transition: 0.3s ease-out;
+}
+.header_acardion1 i{
+  transform: rotate(0.12turn);
+  transition: 0.3s ease-out;
+}
+.wraper_acardion:hover i{
+    display: block;
+}
+.wraper_acardion:hover .header_acardion{
+  color: black;
+  transition: 0.3s ease-out;
+}
+.wraper_acardion:hover .header_acardion1{
+  color: black;
+  transition: 0.3s ease-out;
+}
+.acardion_title {
+  font-size: 23px;
+  cursor: pointer;
+  padding: 2vh 0;
+  width: 100%;
+}
+.acardion_input {
+  appearance: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.acardion_input:checked ~ .acardion_mem {
+  display: block;
+}
+.acardion_input:checked ~ .acardion_mem1 {
+  display: none;
+}
+.acardion_input:checked ~ .header_acardion i{
+  transform: rotate(0.12turn);
+  transition: 0.3s ease-out;
+}
+.acardion_input:checked ~ .header_acardion1 i{
+  transform: rotate(0turn);
+  transition: 0.3s ease-out;
+}
+.acardion_mem{
+  max-width: 60%;
+  margin: auto;
+  display: none;
+}
+.acardion_mem1{
+  max-width: 60%;
+  margin: auto;
+}
+.img_mem {
+  width: 100%;
+}
